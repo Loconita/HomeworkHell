@@ -71,10 +71,6 @@ section h3 {
 }
 /* the styles for the article */
 article {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: space-evenly;
 	padding: 1% 0;
 }
 article h1 {
