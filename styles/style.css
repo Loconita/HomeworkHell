@@ -72,6 +72,9 @@ section h3 {
 /* the styles for the article */
 article {
 	padding: 1% 0;
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }
 article h1 {
 	font-family: "Inknut Antiqua", serif;
