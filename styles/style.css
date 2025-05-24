@@ -182,6 +182,9 @@ footer img {
 		display: flex;
 		flex-direction: column;
 	}
+	article > div {
+		display: contents;
+	}
 	article img { order: 1; }
 	article a { order: 2; }
 	#nav_menu {
