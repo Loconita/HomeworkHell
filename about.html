@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Queen</title>
+        <link rel="shortcut icon" href="images/favicon.svg">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html"><img src="images/queenlogo.png" alt="Queen Logo"></a>
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="current">About</a></li>
+                    <li><a href="albums.html">Albums</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                    <li><a href="store.html">Store</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <h1>About the Band</h1>
+                    <img src="images/aboutphoto.jpg" alt="" class="aboutimg">
+                    <p>Queen is a British rock band formed in London in 1970 by Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), and Roger Taylor (drums, vocals), later joined by John Deacon (bass). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock. </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <a href="#"><img src="images/facebookicon.png" alt=""></a>
+            <a href="#"><img src="images/twittericon.png" alt=""></a>
+            <a href="#"><img src="images/instagramicon.png" alt=""></a>
+            <a href="#"><img src="images/youtubeicon.png" alt=""></a>
+            <a href="#"><img src="images/tiktokicon.png" alt=""></a>
+            <a href="#"><img src="images/spotifyicon.png" alt=""></a>
+        </footer>
+    </body>
+
+</html>
