@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-image: linear-gradient(to right, rgba(212, 175, 55, 0.5) 0 100%), url("../images/queen.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 97%;
+	margin: 0 auto;
+}
+a {
+	font-weight: bold;
+	color: #1a1a1a;
+	text-decoration: none;
+}
+a:focus, a:hover {
+	text-decoration: underline;
+	transition: .4s ease;
+	color: #e21d19;
+}
+/* the styles for the header */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2.5% 0 2% 0;
+}
+header img {
+	max-width: 100%;
+	max-height: 120px;
+}
+/* the styles for the navigation menu */
+#nav_menu {
+	flex-basis: 76%;
+}
+#nav_menu ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	gap: 2%;
+}
+#nav_menu a.current {
+	color: #a80e0e;
+	text-decoration: underline;
+}
+/* the styles for the main content */
+main {
+	display: flex;
+}
+/* the styles for the section */
+section {
+	flex-basis: 100%;
+	padding: 0 2%;
+}
+section h1 {
+	font-size: 200%;
+	padding-top: 1%;
+}
+section h3 {
+	font-family: "Inknut Antiqua", serif;
+	font-size: 190%;
+}
+/* the styles for the article */
+article {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-evenly;
+	padding: 1% 0;
+}
+article h1 {
+	font-family: "Inknut Antiqua", serif;
+	font-size: 400%;
+	padding-top: 1%;
+	margin-bottom: 2%;
+	-webkit-text-stroke: 1px #7e1210;
+}
+article h2 {
+	font-family: "Inknut Antiqua", serif;
+	font-size: 250%;
+	-webkit-text-stroke: 1px #7e1210;
+}
+article h3 {
+	font-family: "Inknut Antiqua", serif;
+	font-size: 190%;
+}
+hr {
+	border: 1px solid black;
+}
+.button {
+	font-family: "Inknut Antiqua", serif;
+	display: inline-block;
+	border: 3px solid #7e1210;
+	line-height: 2;
+	padding: 1% 2%;
+	font-size: 2rem;
+	text-align: center;
+	border-radius: 35px;
+	transition: 0.3s;
+	margin-top: 26%;
+	background-color: #D4AF37;
+	-webkit-text-stroke: 1.5px #7e1210;
+}
+.button:focus, .button:hover {
+	background-color: #c0c0c0;
+}
+.homeimg {
+	float: right;
+	margin: 1%;
+	width: 36%;
+	border: 1px solid black;
+}
+.aboutimg {
+	width: 40%;
+	border-radius: 220px;
+}
+.album {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.albumimg {
+	padding-top: 1%;
+	width: 12.5%;
+}
+.albumh3 {
+	padding: 1%;
+	margin: 1%;
+	border-radius: 50px;
+	border: 3px solid #4b0a09;
+	background-color: #D4AF37;
+}
+.albumbutton {
+	width: 14.05%;
+	margin: .5% 0;
+	text-align: center;
+	border-radius: 10px;
+	border: 3px solid #6A571B;
+	background-color: #D4AF37;
+}
+.albumbutton img {
+	width: 120px;
+	height: 38px;
+	max-width: 100%;
+	object-fit: contain;
+}
+/* the styles for the footer */
+footer {
+	display: flex;
+	justify-content: center;
+	gap: 1%;
+	padding: 5% 0 1.5% 0;
+}
+footer img {
+	max-width: 100%;
+	max-height: 35px;
+}
+/*  the styles for mobile menu */
+#mobile_menu { 
+	display: none;
+}
+@media only screen and (max-width: 959px) {
+	section h1 {font-size: 250%;}
+	section h2, aside h2 {font-size: 165%}
+}
+@media only screen and (max-width: 640px) {
+	header {
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+	}
+	article {
+		display: flex;
+		flex-direction: column;
+	}
+	article img { order: 1; }
+	article a { order: 2; }
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu{
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #D4AF37 !important;
+	}
+}
+
+
+
+/* 
+@media only screen and (max-width: 959px) {
+	section h1 {font-size: 135%;}
+	section h2, aside h2 {font-size: 120%}
+}
+@media only screen and (max-width: 640px) {
+	header img {float: none;}
+	header {text-align: center;}
+	section {
+		display: flex;
+		flex-direction: column;
+		padding-right: 2.5%;
+		width: 100%;
+	}
+	aside {
+		float: none;
+		padding-right: 2.5%;
+		width: 100%;
+	}
+	article img {max-width: 30%}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu{
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #d9b99b !important;
+	}
+}
+@media only screen and (max-width: 420px) {
+	body { font-size: 90%; }
+}
+ */
+/*
+
+@media only screen and (max-width: 640px) {
+	header {
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+	}
+	main {
+		flex-direction: column;
+	}
+	article { order: 2; }
+	.button { order: 1; }
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu{
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #D4AF37 !important;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 959px) {
+	section h1 {font-size: 400%;}
+	section h2, aside h2 {font-size: 250%}
+}
+@media only screen and (max-width: 640px) {
+	header {text-align: center;}
+	section {
+		display: flex;
+		flex-direction: column;
+		padding-right: 2.5%;
+		width: 100%;
+	}
+	aside {
+		float: none;
+		padding-right: 2.5%;
+		width: 100%;
+	}
+	article img {max-width: 30%}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu{
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #D4AF37 !important;
+	}
+}
+@media only screen and (max-width: 420px) {
+	body { font-size: 90%; }
+}
