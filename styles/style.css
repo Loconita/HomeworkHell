@@ -65,9 +65,10 @@ section h1 {
 	font-size: 200%;
 	padding-top: 1%;
 }
-section h3 {
+.studioalbumtxt {
 	font-family: "Inknut Antiqua", serif;
 	font-size: 190%;
+	-webkit-text-stroke: 1px #7e1210;
 }
 /* the styles for the article */
 article h1 {
@@ -140,8 +141,7 @@ hr {
 }
 .albums {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 	justify-content: center;
 }
 .albumsection {
@@ -175,6 +175,19 @@ hr {
 	max-width: 100%;
 	object-fit: contain;
 }
+.contactustxt {
+	text-align: center;
+}
+.contactinfo {
+	margin: 3% 0;
+	padding: 2% 0;
+	background-color: #D4AF37;
+	border: 1px solid #1a1a1a;
+	border-radius: 20px;;
+} 
+.contactinfo p {
+	padding-top: 2%;
+}
 /* the styles for the footer */
 footer {
 	display: flex;
@@ -205,7 +218,7 @@ footer img {
 		flex-direction: column;
 		margin-top: 4%;
 	}
-	article > div {
+	.homehero > div {
 		display: contents;
 	}
 	.homeimg {
@@ -221,11 +234,6 @@ footer img {
 		width: 50%;
 	}
 	article a { order: 2; }
-	.aboutbandtext p {
-		background-color: #D4AF37;
-		border: 5px solid #7e1210;
-		border-radius: 6px;
-	}
 	.button {
 		margin-top: 5%;
 	}
