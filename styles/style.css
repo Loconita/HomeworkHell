@@ -70,12 +70,6 @@ section h3 {
 	font-size: 190%;
 }
 /* the styles for the article */
-article {
-	padding: 1% 0;
-	display: flex;
-	align-items: center;
-	gap: 20px;
-}
 article h1 {
 	font-family: "Inknut Antiqua", serif;
 	font-size: 400%;
@@ -95,6 +89,19 @@ article h3 {
 hr {
 	border: 1px solid black;
 }
+.homehero {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: space-evenly;
+	padding: 1% 0;
+}
+.homeimg {
+	float: right;
+	margin: 1%;
+	width: 36%;
+	border: 1px solid black;
+}
 .button {
 	font-family: "Inknut Antiqua", serif;
 	display: inline-block;
@@ -112,17 +119,32 @@ hr {
 .button:focus, .button:hover {
 	background-color: #c0c0c0;
 }
-.homeimg {
-	float: right;
-	margin: 1%;
-	width: 36%;
-	border: 1px solid black;
+.aboutband {
+	align-items: center;
+	text-align: center;
+	padding: 1% 0;
 }
 .aboutimg {
+	margin: 1%;
 	width: 40%;
+	border: 1px solid black;
 	border-radius: 220px;
 }
-.album {
+.aboutbandtext {
+	background-color: #D4AF37;
+	border: 5px solid #7e1210;
+	border-radius: 6px;
+	padding: 2% 1%;
+	margin-top: 4%;
+	line-height: 1.8;
+}
+.albums {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.albumsection {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -181,104 +203,32 @@ footer img {
 	article {
 		display: flex;
 		flex-direction: column;
+		margin-top: 4%;
 	}
 	article > div {
 		display: contents;
 	}
-	article img { order: 1; }
+	.homeimg {
+		order: 1;
+		margin: 6%;
+		width: 75%;
+	}
+	.aboutimg {
+		margin: 6%;
+		width: 75%;
+	}
+	.albumimg {
+		width: 50%;
+	}
 	article a { order: 2; }
-	#nav_menu {
-		display: none;
+	.aboutbandtext p {
+		background-color: #D4AF37;
+		border: 5px solid #7e1210;
+		border-radius: 6px;
 	}
-	#mobile_menu{
-		display: block;
+	.button {
+		margin-top: 5%;
 	}
-	.slicknav_menu {
-		background-color: #D4AF37 !important;
-	}
-}
-
-
-
-/* 
-@media only screen and (max-width: 959px) {
-	section h1 {font-size: 135%;}
-	section h2, aside h2 {font-size: 120%}
-}
-@media only screen and (max-width: 640px) {
-	header img {float: none;}
-	header {text-align: center;}
-	section {
-		display: flex;
-		flex-direction: column;
-		padding-right: 2.5%;
-		width: 100%;
-	}
-	aside {
-		float: none;
-		padding-right: 2.5%;
-		width: 100%;
-	}
-	article img {max-width: 30%}
-	#nav_menu {
-		display: none;
-	}
-	#mobile_menu{
-		display: block;
-	}
-	.slicknav_menu {
-		background-color: #d9b99b !important;
-	}
-}
-@media only screen and (max-width: 420px) {
-	body { font-size: 90%; }
-}
- */
-/*
-
-@media only screen and (max-width: 640px) {
-	header {
-		display: flex;
-		justify-content: space-around;
-		text-align: center;
-	}
-	main {
-		flex-direction: column;
-	}
-	article { order: 2; }
-	.button { order: 1; }
-	#nav_menu {
-		display: none;
-	}
-	#mobile_menu{
-		display: block;
-	}
-	.slicknav_menu {
-		background-color: #D4AF37 !important;
-	}
-}
-
-
-
-
-@media only screen and (max-width: 959px) {
-	section h1 {font-size: 400%;}
-	section h2, aside h2 {font-size: 250%}
-}
-@media only screen and (max-width: 640px) {
-	header {text-align: center;}
-	section {
-		display: flex;
-		flex-direction: column;
-		padding-right: 2.5%;
-		width: 100%;
-	}
-	aside {
-		float: none;
-		padding-right: 2.5%;
-		width: 100%;
-	}
-	article img {max-width: 30%}
 	#nav_menu {
 		display: none;
 	}
